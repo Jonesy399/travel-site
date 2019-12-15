@@ -1,1 +1,1 @@
-alert("HELLO! This is a test4567890%%");
+import '../styles/styles.css'
