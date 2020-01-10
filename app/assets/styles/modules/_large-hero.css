@@ -1,5 +1,8 @@
 .large-hero{
+    border-bottom: 10px solid $mainBlue;
     position: relative;
+
+    &__image{ display:block; }
     &__text-content{
         position: absolute;
         top: 50%;
@@ -10,12 +13,12 @@
     }
     &__title{
         font-weight: 300;
-        color: #2f5572;
-        font-size: 1.1rem;
+        color: $mainBlue;
+        font-size: 2rem;
         margin: 0;
 
         @mixin atSmall{
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
         @mixin atMedium{
             font-size: 3.2rem;
@@ -26,12 +29,21 @@
     }
     &__subtitle{
         font-weight: 300;
-        color: #2f5572;
-        font-size: 1.1rem;
+        color: $mainBlue;
+        font-size: 1.3rem;
         margin: 0;
-
+    
         @mixin atSmall{
-            font-size: 2.9rem;
+            font-size: 1.6rem;
         }
+        @mixin atMedium{
+            font-size: 1.9rem;
+        }
+        @mixin atLarge{
+            font-size: 2.8rem;
+        }
+    }
+    p{
+        color: white;
     }
 }
